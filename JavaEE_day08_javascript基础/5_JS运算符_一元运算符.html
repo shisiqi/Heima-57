@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一元运算符</title>
+
+    <script>
+        var num = 3;
+        var a = num++;
+        //++(--)在前，先自增或自减，再运算
+        //--（++）在后，先计算，再自增或自减
+        document.write(a + "<br>");//3
+        document.write(num + "<br>");//4
+
+        var num1 = 3;
+        var a1 = ++num1;
+        document.write(a1 + "<br>");//4
+        document.write(num1 + "<br>");//4
+
+        //在字符串前添加正负号，字符串会自动转换为number类型
+        var b = -"123";
+        document.write(typeof(b) + "<br>");
+
+        //如果字符串的字面值不是数字，在字符串前添加正负号，则转为NaN
+        var c = -"abc";
+        document.write(typeof (c) + "<br>");//number类型
+        document.write(c + "<br>");
+
+        //boolean转number：true转为1，false转为0
+        var flag = +true;
+        var flag1 = +false;
+        document.write(flag + "<br>");
+        document.write(typeof (flag) + "<br>");
+        document.write(flag1 + "<br>");
+        document.write(typeof (flag1) + "<br>");
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

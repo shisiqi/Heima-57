@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>逻辑运算符</title>
+
+    <script>
+        /*
+        * 逻辑运算符：
+        *   &&：短路与
+        *   ||：短路或
+        *   ！：非
+        *       *其他类型转boolean：
+        *           1.number转boolean：0或NaN为假，其他为真
+        *           2.string转boolean：除了空字符串，其它都是true
+        *           3.null&undefined转boolean：都是false
+        *           4.对象：所有对象都为true
+        *
+        */
+        var flag = true;
+        document.write(flag + "<br>");
+        document.write(!flag + "<br>");
+
+        document.write("<hr>");
+        //number转boolean
+        var num = 3;
+        var num1 = 0;
+        var num2 = NaN;
+        document.write(!num + "<br>");
+        document.write(!num1 + "<br>");
+        document.write(!num2 + "<br>");
+
+        //string转boolean
+
+        var str1 = "";
+        var str2 = "abc";
+        document.write(!str1 + "<br>");
+        document.write(!str2 + "<br>" )
+
+        //null&undefined转boolean
+        var obj = null;
+        var obj1;
+        document.write(!obj + "<br>");
+        document.write(!obj1 + "<br>")
+
+        //对象类型转boolean
+        var date = new Date();
+        document.write(!!date + "<br>");
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
