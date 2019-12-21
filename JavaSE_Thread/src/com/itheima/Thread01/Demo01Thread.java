@@ -6,6 +6,6 @@ package com.itheima.Thread01;
  *      2. 在Thread类的子类中重写
  */
 public class Demo01Thread {
-    
+
 
 }
