@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math</title>
+    <script>
+        /*
+        Math对象
+        1.创建：Math对象不用创建，直接使用
+        2.方法：
+            random():返回0-1之间的随机数(含0不含1)
+            ceil(x)：对数据进行向上舍入
+            floor(x):对数据进行向下舍入
+
+        3.属性：
+            PI
+
+
+         */
+
+        document.write(Math.PI + "<br>");
+        document.write(Math.random() + "<br>");
+        document.write(Math.round(3.78) + "<br>");
+        document.write(Math.ceil(4.9) + "<br>");
+        document.write(Math.floor(4.2) + "<br>");
+
+        /*
+        取1-100之间的随机整数
+        Math.random产生的是[0,1)
+        乘以100得到[0,100)
+        在对该数据进行向下取整得到[0,99]
+        再加1得到[1,100]
+         */
+        document.write(Math.floor(Math.random()*100)+1 + "<br>");
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
