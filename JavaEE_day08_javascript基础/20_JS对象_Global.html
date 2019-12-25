@@ -12,12 +12,27 @@
             1.encodeURI():url编码
             2.decodeURI():url解码
 
-            3.encodeURIComponent():url编码
+            3.encodeURIComponent():url编码,编码的字符更多
             4.decodeURIComponent():url解码
 
-
-
+            5.parseInt()：将字符串转成数字
+                逐一判断每一个字符是否是数字，直到不是数字为止，将前边数字部分转化为number
+            6.eval()：将javascript代码转成自称脚本
          */
+
+        var str = "传智播客";
+        var encode = encodeURI(str);
+        document.write(encode + "<br>");
+        var decode = decodeURI(encode);
+        document.write(decode + "<br>");
+
+        var str1 = "123abc";
+        alert(str1+1);//123abc1
+        let number = parseInt(str1);//会取出数字部分然后转化成number在进行数字格式的运算
+        alert(number+1);
+
+        var jscode = "alert('shisiqi')";
+        eval(jscode);
 
 
 

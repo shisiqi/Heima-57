@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Heima-57.iml" filepath="$PROJECT_DIR$/.idea/Heima-57.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaEE_day08_javascript基础/JavaEE_day08_javascript基础.iml" filepath="$PROJECT_DIR$/JavaEE_day08_javascript基础/JavaEE_day08_javascript基础.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaEE_day09_javascript高级/JavaEE_day09_javascript高级.iml" filepath="$PROJECT_DIR$/JavaEE_day09_javascript高级/JavaEE_day09_javascript高级.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaEE_eesy_day01mybatis/JavaEE_eesy_day01mybatis.iml" filepath="$PROJECT_DIR$/JavaEE_eesy_day01mybatis/JavaEE_eesy_day01mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaSE_Thread/JavaSE_Thread.iml" filepath="$PROJECT_DIR$/JavaSE_Thread/JavaSE_Thread.iml" />
     </modules>
