@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件绑定</title>
+    <!--事件绑定的两种方式
+        1.点击事件写在标签体内
+        2.通过id获取到标签对象，然后对象.onclick来绑定事件
+    -->
+</head>
+<body>
+
+<img src="img/off.gif" id="light">
+<!--<img src="img/off.gif" id="light" onclick = "fun">-->
+<script>
+    var light = document.getElementById("light");
+    light.onclick = fun;
+    function fun() {
+        light.src = "img/on.gif";
+    }
+
+</script>
+
+</body>
+</html>

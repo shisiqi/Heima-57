@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <!--获取页面标签（元素）对象 Element
+        document.getElementById("id值");
+        操作Element对象
+            1.修改标签属性值:直接使用得到的标签元素对象.属性重新赋值即能得到
+            2.修改标签体内容:innerHTML
+    -->
+
 </head>
 <body>
-    <img src="">
+
+    <img id="light" src="img/off.gif">
+    <h1 id="title">悔创阿里杰克马</h1>
+    <script>
+        //通过id来获取img元素对象
+        // var light = document.getElementById("light");
+        // alert("我要换图片了...");
+        // light.src = "img/on.gif";
+
+
+        //获取h1标签对象
+        var title = document.getElementById("title");
+        alert("我要换内容了")
+        title.innerHTML =  "不识妻美刘强东";
+
+    </script>
 
 </body>
 </html>
