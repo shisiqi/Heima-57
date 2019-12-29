@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+</head>
+<body>
+    <img id="banner_1" src="img/banner_1.jpg" width="100%">
+    <script>
+        var number = 1;
+        function fun() {
+            number++;
+            //判断number是不是等于3，等于3就重新赋值为1
+            if (number > 3){
+                number = 1;
+            }
+            var img = document.getElementById("banner_1");
+            img.src = "img/banner_"+ number+".jpg"
+        }
+        //定义定时器
+        setInterval(fun,1000);
+
+    </script>
+</body>
+</html>
