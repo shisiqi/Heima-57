@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Node对象</title>
+    <style>
+        div{
+            border: 1px red solid;
+        }
+
+        #div1{
+            width: 200px;
+            height: 200px;
+        }
+
+        #div2{
+            width: 100px;
+            height: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="div2">div2</div>
+        div1
+    </div>
+<!--    <input type="button" value="删除div1的子节点" id="del">-->
+    <a id="del" href="javascript:void(0)">删除div1的子节点</a>
+    <script>
+        var element_del = document.getElementById("del");
+        element_del.onclick = function () {
+            var div1 = document.getElementById("div1");
+            var div2 = document.getElementById("div2");
+            div1.removeChild(div2);
+
+        };
+
+        var div2 = document.getElementById("div2");
+        var div1 = div2.parentNode;
+        // alert(div1);
+
+
+
+    </script>
+</body>
+</html>
