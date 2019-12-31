@@ -197,6 +197,8 @@
      */
 
     //在页面加载完成之后给表单绑定onsubmit的事件
+    //之前script必须写在<input>的后面，必须要等待页面加载完所有的内容再去执行script里的代码
+    //若是想把script必须给这部分代码绑定Onload事件，表示在页面加载完成之后执行。
     window.onload = function () {
         //获取整个表单,并使用匿名函数的形式
         document.getElementById("form").onsubmit = function () {
