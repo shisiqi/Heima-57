@@ -14,9 +14,9 @@
             <dataSource type="POOLED">
                 <!--配置连接数据库的4个基本信息-->
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://192.168.43.75:3306/eesy_mybatis"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/eesy_mybatis"/>
                 <property name="username" value="root"/>
-                <property name="password" value="abcd123"/>
+                <property name="password" value="root"/>
             </dataSource>
         </environment>
     </environments>
