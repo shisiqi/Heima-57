@@ -11,11 +11,16 @@ import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+/*
+*
+* 需求：
+        1. 访问一个Servlet，如果是第一次访问，则提示：您好，欢迎您首次访问。
+        2. 如果不是第一次访问，则提示：欢迎回来，您上次访问时间为:显示时间字符串
+* */
 @WebServlet("/cookieTest")
 public class CookieTest extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //设置响应的消息体
+        //设置响应的消息体的数据格式及编码
         response.setContentType("text/html;charset=utf-8");
         //设置标记位：当没有cookie的名字是lastTime的时候,flag=false
         boolean flag = false;
@@ -31,13 +36,13 @@ public class CookieTest extends HttpServlet {
                     flag = true;
                     //获取上一次从浏览器端带过来的cookie值
 
-                    //获取当前时间
+                    //获取当前时间，重新设置Cookie的值，重新发送cookie
                     Date date = new Date();
                     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy年MM月dd日-HH:mm:ss");
                     String str_date = simpleDateFormat.format(date);
                     System.out.println("编码前:" + str_date);
                     //URL编码
-                    URLEncoder.encode(str_date,"utf-8");
+                    str_date = URLEncoder.encode(str_date,"utf-8");
                     System.out.println("编码后：" + str_date);
                     cookie.setValue(str_date);
                     //设置cookie的存活时间
@@ -45,6 +50,7 @@ public class CookieTest extends HttpServlet {
                     response.addCookie(cookie);
 
                     //响应数据
+                    //获取cookie的value，时间
                     String value = cookie.getValue();
                     System.out.println("解码前:" + value);
                     //URL解码
